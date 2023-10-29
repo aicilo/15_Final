@@ -21,7 +21,6 @@ const products_get_all = async (req, res, next) => {
         };
       }),
     };
-    console.log(process.env.HOSTNAME);
     res.status(200).json(response);
   } catch (error) {
     console.error(error.message);
